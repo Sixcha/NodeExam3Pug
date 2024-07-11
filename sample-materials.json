@@ -1,0 +1,10 @@
+[
+    { "name": "frêne", "company": "BBois" },
+    { "name": "chêne", "company": "BBois" },
+    { "name": "noyer", "company": "BBois" },
+    { "name": "acier", "company": "MetaLo" },
+    { "name": "inox", "company": "MetaLo" },
+    { "name": "aluminum", "company": "MetaLo" },
+    { "name": "plastic", "company": "pPlastique" }
+  ]
+  

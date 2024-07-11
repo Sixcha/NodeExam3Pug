@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1 #{materials.name}
+  a(href='/furniture') View Furniture
+  p Company: #{materials.company}
+  canvas#myChart(width='400' height='400')
+  script.
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Example 1', 'Example 2'],
+        datasets: [{
+          label: 'Sample Data',
+          data: [12, 19],
+          backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)'],
+          borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)'],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });

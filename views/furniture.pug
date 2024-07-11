@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 Furniture List
+  a(href='/materials') View Materials
+  ul
+    each furniture in furnitures
+      li
+        h2 #{furniture.name}
+        p Category: #{furniture.category}
+        ul
+          each material in furniture.materials
+            li
+              a(href=`/material/${material._id}`) #{material.name}
