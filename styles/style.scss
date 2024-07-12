@@ -1,0 +1,130 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$info-color: #17a2b8;
+$warning-color: #ffc107;
+$danger-color: #dc3545;
+$light-color: #f8f9fa;
+$dark-color: #343a40;
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    font-size: 62.5%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-size:1.8rem;
+    font-family: Arial, sans-serif;
+    background-color: $light-color;
+    background-image: url("https://cdn.discordapp.com/attachments/1054763922177151016/1261302394218610708/sixcha_Light_blue_background_with_light_purple_gradient_light_s_329fddd7-90b2-4632-a9d7-3e1f7d6929b7.png?ex=669276e4&is=66912564&hm=74296e6ae0434a28b556f3800bbcf4fb3099783bcdc43982cb0e68d799a90afd&");
+    background-size: 100%;
+    color: $dark-color;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+  background-color: $primary-color;
+  padding: 1rem;
+  .navbar-brand {
+    color: $light-color;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    &:hover {
+      color: $light-color;
+    }
+  }
+}
+
+.sidebar {
+  background-color: $dark-color;
+  color: $light-color;
+  min-height: 100vh;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  .sidebar-item {
+    margin: 1rem 0;
+    a {
+      color: $light-color;
+      text-decoration: none;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.content {
+  margin-left: 250px;
+  padding: 2rem;
+}
+
+.card {
+  background-color: $light-color;
+  border: 1px solid $dark-color;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 1rem;
+
+  a{
+    text-decoration: none;
+    color: $primary-color;
+    &:hover {
+        color: $secondary-color;
+      }
+  }
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  color: $light-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  &.btn-primary {
+    background-color: $primary-color;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+  &.btn-secondary {
+    background-color: $secondary-color;
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
+
+.chart{
+    height: 65rem;
+    width: 65rem;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    *{
+        margin: 0.5rem 0;
+    }
+}
+
+.border{
+  border-bottom: 1px solid $dark-color;
+}
+
+  

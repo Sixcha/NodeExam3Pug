@@ -2,4 +2,10 @@ extends layout
 
 block content
   h1 #{material.name}
-  p Company: #{material.company}
+  p Entreprise: #{material.company}
+  ul
+    each furniture in furnitureUsingMaterial
+      li
+        h2 #{furniture.name}
+        p Category: #{furniture.category}
+        p Quantity: #{furniture.quantity}

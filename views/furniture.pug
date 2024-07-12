@@ -1,15 +1,14 @@
 extends layout
 
 block content
-  h1 Furniture List
-  a(href='/materials') View Materials
-  ul
-    each furniture in furnitures
-      li
-        h2 #{furniture.name}
-        p Category: #{furniture.category}
-        p Quantity: #{furniture.quantity}
-        ul
-          each material in furniture.materials
-            li
-              a(href=`/material/${material._id}`) #{material.name}
+  h1 Meubles
+  each furniture in furnitures
+    .card
+      h2 #{furniture.name}
+      p Category: #{furniture.category}
+      p Quantity: #{furniture.quantity}
+      h3 Materials
+      ul
+        each material in furniture.materials
+          li 
+            a(href=`/material/${material._id}`) #{material.name.charAt(0).toUpperCase() + material.name.slice(1)}

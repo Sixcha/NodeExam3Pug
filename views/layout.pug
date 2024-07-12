@@ -1,8 +1,19 @@
 doctype html
 html
   head
-    title Craftsman Showcase
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+    title Vitrine Artisan
+    link(rel='stylesheet', href='/css/style.css')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js')
   body
-    block content
+    .sidebar
+      .sidebar-item
+        a(href='/') Home
+      .sidebar-item
+        a(href='/furniture') Meubles
+      .sidebar-item
+        a(href='/admin') Admin
+
+      //- .sidebar-item
+      //-   a(href='/materials') Materials
+    .content
+      block content
